@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView 
+       android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id = "@+id/txt"
+      android:text ="Крестики Нолики"
+      android:paddingTop = "30dp"
+      android:textSize = "20sp"
+      android:layout_gravity ="center"
+      />
+      
+      <Button 
+       android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id = "@+id/more"
+      android:text ="ЕЩЁ?"
+      android:paddingTop = "10dp"
+      android:textSize = "20sp"
+      android:layout_gravity ="center"
+      android:onClick ="refresh"
+      
+      />
+
+  <TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity ="center"
+    android:paddingLeft = "30dp"
+    android:paddingRight = "30dp"
+    android:background="#E3E0A5"  
+    >
+    
+   <TableRow
+       android:background="#0079D6"     
+       >
+      <Button 
+         android:id = "@+id/sq1"
+         android:text=" "
+     
+         android:padding= "25dp"
+         android:textSize = "40sp"
+         android:layout_weight="1"
+         android:layout_column="0"
+         android:onClick ="setSq1"/>
+         
+       <Button 
+         android:id ="@+id/sq2"
+         android:text=" "
+         android:padding= "25dp"
+         android:textSize = "40sp"
+         android:layout_weight="1"
+         android:layout_column="1"
+          android:onClick ="setSq2"/>
+			
+      <Button 
+         android:id ="@+id/sq3"
+         android:text=" "
+         android:padding = "25dp"
+         
+         android:textSize = "40sp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:layout_column="2"
+        android:onClick ="setSq3" />
+               
+      </TableRow> 
+      
+      <TableRow
+       android:background="#0079D6"   
+         
+       >
+      <Button 
+         android:id = "@+id/sq4"
+         android:text=" "
+         android:padding= "25dp"
+         
+         android:textSize = "40sp"
+         android:layout_weight="1"
+         android:layout_column="0"
+         android:onClick ="setSq4"/>
+       
+       <Button 
+         android:id ="@+id/sq5"
+         android:text=" "
+         android:padding= "25dp" 
+         android:textSize = "40sp"
+         android:layout_weight="1"
+         android:layout_column="1" 
+        android:onClick ="setSq5" />
+			
+      <Button 
+         android:id ="@+id/sq6"
+         android:text=" "
+         android:padding= "25dp" 
+         android:textSize = "40sp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:layout_column="2"
+         android:onClick ="setSq6"/>
+               
+      </TableRow> 
+      
+      <TableRow
+       android:background="#0079D6"    
+       >
+      <Button 
+         android:id = "@+id/sq7"
+         android:text=" "
+         android:padding = "25dp"
+         android:textSize = "40sp"
+         android:layout_weight="1"
+         android:layout_column="0"
+         android:onClick ="setSq7"
+         />
+       
+       <Button 
+         android:id ="@+id/sq8"
+         android:text=" "
+         android:padding = "25dp"
+         android:textSize = "40sp"
+         android:layout_weight="1"
+         android:layout_column="1"
+          android:onClick ="setSq8"/>
+			
+      <Button 
+         android:id ="@+id/sq9"
+         android:text=" "
+         android:padding = "25dp"
+         android:textSize = "40sp"
+         android:layout_weight="1"
+         android:layout_column="2"
+         android:onClick ="setSq9"/>
+               
+      </TableRow> 
+  </TableLayout>
+    
+</LinearLayout>
